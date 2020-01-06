@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="395.0" prefWidth="845.0" styleClass="button" stylesheets="@newCascadeStyleSheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication12.ProdazhaController">
+    <children>
+    
+      <TextField fx:id="ИД" layoutX="94.0" layoutY="33.0" promptText="ИД Товара" />
+      <TextField fx:id="Название" layoutX="94.0" layoutY="81.0" promptText="Название товара" />
+      <TextField fx:id="Дата" layoutX="94.0" layoutY="122.0" promptText="Дата продажи" />
+      <TextField fx:id="Колво" layoutX="94.0" layoutY="167.0" promptText="Количество проданного товара" />
+      <TextField fx:id="Цена" layoutX="94.0" layoutY="210.0" promptText="Цена" />
+      <Button fx:id="ADD" layoutX="113.0" layoutY="255.0" mnemonicParsing="false" onAction="#handlButtonAction" prefHeight="31.0" prefWidth="90.0" text="Добавить " />
+      <Button fx:id="Delete" layoutX="113.0" layoutY="298.0" mnemonicParsing="false" onAction="#handlButtonAction" prefHeight="31.0" prefWidth="90.0" text="Удалить" />
+      <Button fx:id="Output1" layoutX="542.0" layoutY="292.0" mnemonicParsing="false" onAction="#handlButtonAction" text="Просмотр" />
+      <Button fx:id="Back" layoutX="27.0" layoutY="348.0" mnemonicParsing="false" onAction="#handlButtonAction" text="Вернуться" textFill="RED" />
+       <Button fx:id="EXIT" layoutX="765.0" layoutY="348.0" mnemonicParsing="false" onAction="#handlButtonAction" text="Выйти " textFill="RED" />
+      <TextArea fx:id="Out" layoutX="341.0" layoutY="14.0" prefHeight="263.0" prefWidth="491.0" />
+   </children>
+</AnchorPane>
