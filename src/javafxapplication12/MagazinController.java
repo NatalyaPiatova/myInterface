@@ -114,6 +114,7 @@ public class MagazinController implements Initializable {
 формирование запрося для отображения связи таблицы, при выводе в таблице МАГАЗИН вместо цифрового значения продавца , будет выводить его ФИО
 */         
             if (event.getSource()==Output5){
+                   Out.setText(null);
        String query = "SELECT MAGAZIN.ID,MAGAZIN.TOVAR_ID,MAGAZIN.SELL_ID,MAGAZIN.PRICE_ID,PRODAVZI.`FIO` as `SELLER_ID` FROM MAGAZIN INNER JOIN PRODAVZI ON (MAGAZIN.`SELLER_ID`= PRODAVZI.`SELLER_ID`)";  
     try{   Connection con = DriverManager.getConnection(url,user,password);
         Statement stmt = con.createStatement();

@@ -131,7 +131,7 @@ public class ProdavciController implements Initializable {
 Кнопка Удалить
  */  
       if (event.getSource() == DELETE) {
-            String query = "DELETE FROM PTODAVZI WHERE SELLER_ID=" + ИД.getText() + "";
+            String query = "DELETE FROM PRODAVZI WHERE SELLER_ID=" + ИД.getText() + "";
             executeQuery(query);
         }
                  /**
